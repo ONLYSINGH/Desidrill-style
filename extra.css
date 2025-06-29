@@ -1,0 +1,45 @@
+
+/* extra.css – DesiDrill Speed Optimizations */
+
+/* Use system fonts for faster rendering */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Improve font rendering and legibility */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth transitions for UI */
+a, button, input {
+  transition: all 0.3s ease;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Reduce CLS: reserve image space */
+img[loading='lazy'] {
+  aspect-ratio: 16/9;
+  background: #f5f5f5;
+}
+
+/* Button style for better UX */
+button {
+  background-color: #f12f3f;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
