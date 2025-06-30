@@ -54,3 +54,11 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
+/* Hard target logo image by URL */
+img[src*="AVvXsEgVJn5uuWzb2Ip-afu3vOOdSPAuFyCDD19MfCc6jq31EZ_Kb5-Sdrl9FGsvE621iRoh1U_35szuWMp4OkEWJon2e6-eC1GST7HMTu7Yc3u1J"] {
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  display: inline-block !important;
+}
+
