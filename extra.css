@@ -22,18 +22,11 @@ a, button, input {
 }
 
 /* Responsive images */
-/* General responsive images */
-img {
+/* Only make post images responsive, not logo */
+.post-body img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* Force fix ONLY logo image */
-img[src*="logo"] {
-  width: 200px !important;
-  max-width: none !important;
-  height: auto !important;
 }
 
 /* Reduce CLS: reserve image space */
