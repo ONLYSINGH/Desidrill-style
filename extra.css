@@ -22,18 +22,18 @@ a, button, input {
 }
 
 /* Responsive images */
-/* Responsive images globally, but not for logo */
-.header img,
-.header-widget img {
-  max-width: none !important;
-  width: auto !important;
-  height: auto !important;
-}
-
+/* General responsive images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Force fix ONLY logo image */
+img[src*="logo"] {
+  width: 200px !important;
+  max-width: none !important;
+  height: auto !important;
 }
 
 /* Reduce CLS: reserve image space */
