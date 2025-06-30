@@ -22,11 +22,21 @@ a, button, input {
 }
 
 /* Responsive images */
-/* Only make post images responsive, not logo */
+/* Target post content images only */
 .post-body img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/* Force header logo to keep original size */
+.header img,
+.header-widget img,
+img[src*="logo"] {
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+  display: inline-block !important;
 }
 
 /* Reduce CLS: reserve image space */
