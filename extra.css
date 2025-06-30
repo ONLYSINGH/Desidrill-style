@@ -22,7 +22,7 @@ a, button, input {
 }
 
 /* Responsive images */
-img {
+img:not(.site-logo) {
   max-width: 100%;
   height: auto;
   display: block;
